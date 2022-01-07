@@ -1,0 +1,15 @@
+{
+    "editor.fontSize": 18,
+    "editor.wordWrap": "bounded",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'cascadia code',Consolas, 'Courier New', monospace",
+    "workbench.colorCustomizations": {
+        {
+            "workbench.colorCustomizations": {
+                "editorError.foreground":   "#00000000",
+                "editorWarning.foreground": "#00000000",
+                "editorInfo.foreground":    "#00000000"
+            }
+        }
+    }
+}
