@@ -4,6 +4,12 @@
             justify-content: center;
 }
 
+@mixin text($size,$height,$weight){
+    font-size: $size;
+    font-height: $height;
+    font-weight: $weight;
+}
+
 .header-main{
     background-color: #0F0F0F;
     .header-container{
@@ -15,17 +21,14 @@
             @include flex-display;
                 .header-title{  
                     @include flex-display;
-                    font-weight: bold;
-                    font-size: 36px;
-                    line-height: 42px;
+                    @include text(36px, 42px, bold);
                     color: #F1F2F2;
                     padding-left: 13px;
 
                         span{
                             padding-left: 13px;
                             color: #fff;
-                            font-size: 36px;
-                            font-weight: 100;
+                            @include text(36px,normal, 100);
                         }
                 }
         }
@@ -37,22 +40,15 @@
                 @include flex-display;
                 li{
                     list-style-type: none;
-                    padding-top: 33px;
-                    padding-left : 110px;
-                    padding-bottom: 32px;
+                    padding : 33px 0 32px 110px;
+
                     a{
                         text-decoration: none;
                         color: #F1F2F2;
-                        font-weight: 300;
-                        font-size: 20px;
-                        line-height: 35px;
+                        @include text(20px, 35px, 300);
                         text-align: right;
                         opacity: 0.8;
                         
-                    }
-
-                    &:nth-last-child(1){
-                        padding-right: 99px;
                     }
                     
                 }
