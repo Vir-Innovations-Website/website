@@ -1,19 +1,20 @@
+@mixin flex-display{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+
 .header-main{
     background-color: #0F0F0F;
     .header-container{
         background-color: #0F0F0F;
         color: #fff;
-        display: flex;
-        align-items: center;
+        @include flex-display;
     
         .header{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-display;
                 .header-title{  
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-display;
                     font-weight: bold;
                     font-size: 36px;
                     line-height: 42px;
@@ -33,9 +34,7 @@
             margin-left: 282px;
 
             .header-list{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-display;
                 li{
                     list-style-type: none;
                     padding-top: 33px;
