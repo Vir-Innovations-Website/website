@@ -5,8 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "compile:sass": "sass components/LandingPage/HeaderSection/Header.scss header.css"
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
