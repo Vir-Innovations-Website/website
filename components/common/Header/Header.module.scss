@@ -50,6 +50,20 @@
             @include text(20px, 35px, 300);
             text-align: right;
             opacity: 0.8;
+
+            &:hover{
+              color: #fff;
+              opacity: 1;
+              padding-bottom: 5px;
+              border-bottom: 2px solid #fff;
+            }
+
+            &:active{
+              opacity: 1;
+              color: #fff;
+              padding-bottom: 5px;
+              border-bottom: 2px solid #E2593B;
+            }
           }
         }
       }
