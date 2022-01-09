@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Landing.module.css'
+import About from '../components/common/About/About'
 import Header from '../components/common/Header/Header.js'
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <main className={styles.main}>
         <div>
           <Header />
+          <About/>
         </div>
       </main>
 
