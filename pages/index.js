@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Header from '../components/Landing/Header/Header.js'
+import styles from '../styles/Landing.module.css'
+import Header from '../components/common/Header/Header.js'
 
 
 export default function Home() {

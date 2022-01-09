@@ -10,14 +10,17 @@
   font-weight: $weight;
 }
 
-.HeaderMain {
+.HeaderWrapper {
   background-color: #0f0f0f;
-  .HeaderContainer {
+  height: 100px;
+  @include flex-display;
+  .Header {
     background-color: #0f0f0f;
     color: #fff;
     @include flex-display;
+    justify-content: space-between;
 
-    .Header {
+    .Logo {
       @include flex-display;
       .HeaderTitle {
         @include flex-display;
@@ -33,15 +36,14 @@
       }
     }
 
-    .HeaderOptions {
-      margin-left: 282px;
-
+    .HeaderMenu {
       .HeaderList {
         @include flex-display;
+        margin: 0px;
         li {
           list-style-type: none;
-          padding: 33px 0 32px 110px;
-
+          padding: 16px;
+          margin: 0 39px;
           a {
             text-decoration: none;
             color: #f1f2f2;
