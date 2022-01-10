@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Landing.module.css'
 import About from '../components/common/About/About'
 import Header from '../components/common/Header/Header.js'
+import ContinuationOfAbout from '../components/common/ContinuationOfAbout/ContinuationOfAbout'
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <div>
           <Header />
           <About/>
+          <ContinuationOfAbout/>
         </div>
       </main>
 
