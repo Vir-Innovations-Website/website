@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Landing.module.css'
-import About from '../components/common/About/About'
+import HeroSection from '../components/common/HeroSection/HeroSection'
 import Header from '../components/common/Header/Header.js'
-import ContinuationOfAbout from '../components/common/ContinuationOfAbout/ContinuationOfAbout'
+import About from '../components/common/About/About'
+import Services from '../components/common/Services/Services'
 
 
 export default function Home() {
@@ -19,8 +20,9 @@ export default function Home() {
       <main className={styles.main}>
         <div>
           <Header />
+          <HeroSection/>
           <About/>
-          <ContinuationOfAbout/>
+          <Services/>
         </div>
       </main>
 

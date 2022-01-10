@@ -1,0 +1,121 @@
+@mixin structure($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin text($size, $height, $weight) {
+    font-size: $size;
+    font-height: $height;
+    font-weight: $weight;
+  }
+
+  @mixin boxSize($width,$height){
+      width: $width;
+      height: $height;
+  }
+
+.ServicesWrapper{
+    background-color: #f8f8f8;
+    margin : -100px 0 0 0;
+    padding: 10px 0 0 0;
+
+    .ServicesHeadingWrapper{
+        @include text(63px,74px,300);
+        @include boxSize(715px,133px);
+        margin: 180px 0 0 100px;
+
+        .HeadingPart{
+            margin: -40px 0 0 0;
+        }
+        span{
+            font-weight:700;
+            font-style: italic;
+        }
+    }
+
+    .ServicesMainText{
+        @include boxSize(1137px,59px);
+        p{
+            color: #0f0f0f;
+            margin: 72px  0 0 100px;
+            @include text(20px,35px,normal);
+        }
+    }
+
+    .ServicesDefenceWrapper{
+        display: flex;
+        margin: 101px 101px 0 205px;
+
+        .DefenceImg{
+            margin: 0 125px;
+        }
+
+        .DefenceHeadingAndText{
+            .DefenceHeading{
+                margin: 0 0 21px 0;
+                @include text(35px,41px,500);
+                color: #0f0f0f;
+            }
+
+            .DefenceText{
+                color: #0f0f0f;
+                @include boxSize(505px,234px);
+                opacity: 0.6;
+                @include text(20px,35px,normal);
+            }
+        }
+    }
+
+    .DefenceConsumerWrapper{
+        display: flex;
+
+        .ConsumerHeadingAndText{
+
+            .ConsumerHeading{
+                color: #0f0f0f;
+                @include boxSize(237px,82px);
+                margin: 99px 403px 21px 205px;
+                @include text(35px,41px,500);
+            }
+
+            .ConsumerText{
+                color: #0f0f0f;
+                opacity: 0.6;
+                margin: 21px  0 0 0;
+                @include boxSize(505px,234px);
+                margin: 0 0 0 205px;
+                @include text(20px,35px,normal);
+            }
+        }
+
+        .ConsumerImgWrapper{
+            margin: 150px 207px 0 125px;
+            @include boxSize(400px,400px);
+        }
+    }
+
+    .ServicesProductWrapper{
+        display: flex;
+        
+        .ProductImg{
+            margin: 130px 125px 131px 205px;
+            @include boxSize(400px,400px);
+        }
+
+        .ProductHeadingAndText{
+            .ProductHeading{
+                color: #0f0f0f;
+                margin: 99px 466px 21px 125px;
+                @include text(35px,41px,500);
+            }
+
+            .ProductText{
+                margin: 0 207px 194px 125px;
+                opacity: 0.6;
+                @include text(20px,35px,normal);
+                @include boxSize(505px,234px);
+                color: #0f0f0f;
+            }
+        }
+    }
+}

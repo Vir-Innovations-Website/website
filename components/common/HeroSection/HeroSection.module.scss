@@ -1,0 +1,62 @@
+@mixin structure($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin text($size, $height, $weight) {
+    font-size: $size;
+    font-height: $height;
+    font-weight: $weight;
+  }
+
+
+.HeroSectionWrapper{
+    background-image: linear-gradient(
+        to right,
+        rgb(15,15,15),
+        rgba(15,15,15,0.8),
+        rgba(15,15,15,0)
+    ),
+    url("/static/images/about-img.png");
+    @include structure(100%,100%);
+    background-size: cover;
+
+    .HeroSectionHeading{
+        padding: 374px 0 0 100px;
+        @include structure(700px,100%);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        strong{
+            @include text(65px,76.17px,900);
+        }
+        p{
+            @include text(65px,76.17px,700);
+        }
+    }
+
+    .HeroSectionText{
+        p{
+            color: #f1f2f2;
+            opacity: 0.6;
+            @include structure(737px,60px);
+            @include text(22px,normal,400);
+            margin: 30px 0 0 100px;
+        }
+    }
+
+    .HeroSectionButtonWrapper{
+        .HeroSectionButton{
+            background-color: #E2593B;
+            color: #f1f2f2;
+            @include text(18px,21.09px,500);
+            margin: 90px 0 0 100px;
+            @include structure(264px,60px);
+            border-radius: 38px;
+            margin-bottom: 194px;
+        }
+    }
+}
