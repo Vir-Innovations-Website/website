@@ -8,7 +8,6 @@ import Services from '../components/common/Services/Services'
 import Clientele from '../components/common/Clientele/Clientele'
 import ContactUs from '../components/common/ContactUs/ContactUs'
 import Footer from '../components/common/Footer/Footer'
-import Test from '../components/common/Test/Test'
 
 
 export default function Home() {
@@ -26,7 +25,6 @@ export default function Home() {
           <Header />
           <HeroSection />
           <About />
-          <Test />
           <Services />
           <Clientele />
           <ContactUs />
