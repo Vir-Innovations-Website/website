@@ -5,12 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "compile:header:sass" : "sass components/common/Header/Header.module.scss Landing.module.css",
-    "compile:herosection:sass" : "sass components/common/HeroSection/HeroSection.module.scss HeroSection.module.css",
-    "compile:aboutConatinuation:sass" : "sass components/common/ContinuationOfAbout/ContinuationOfAbout.module.scss ContinuationOfAbout.module.css",
-    "compile:services:sass" : "sass components/common/Services/Services.module.scss Services.module.css"
-    
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
