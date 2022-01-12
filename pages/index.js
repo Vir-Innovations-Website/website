@@ -20,8 +20,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div>
-          <Header />
+        <div >
           <HeroSection/>
           <About/>
           <Services/>
@@ -29,10 +28,6 @@ export default function Home() {
           <ContactUs/>
         </div>
       </main>
-
-      <footer>
-        <Footer/>
-      </footer>
     </div>
   )
 }

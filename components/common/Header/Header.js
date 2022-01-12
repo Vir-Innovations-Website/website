@@ -4,7 +4,7 @@ import styles from './Header.module.scss'
 const Header = () => {
     return (
         <div className={styles.HeaderWrapper}>
-            <div className={`container `}>
+            <div >
                 <div className={`${styles.Header}`}>
                     <div className={styles.Logo}>
                         <img src="static/images/logo.png" alt="Logo" className={styles.HeaderImg} />
