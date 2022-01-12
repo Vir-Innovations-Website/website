@@ -3,7 +3,7 @@ import styles from './Services.module.scss'
 
 function Services() {
     return (
-        <div className={styles.ServicesWrapper}>
+        <div id='services' className={styles.ServicesWrapper}>
             <div className={styles.ServicesHeadingWrapper}>
                 <p>DESIGNING FOR A </p>
                 <p className={styles.HeadingPart}><span>SMARTER</span> TOMORROW</p>

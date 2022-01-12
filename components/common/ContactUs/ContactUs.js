@@ -3,7 +3,7 @@ import styles from './ContactUs.module.scss'
 
 function ContactUs() {
     return (
-        <div className={styles.ContactUsWrapper}>
+        <div id='contact-us' className={styles.ContactUsWrapper}>
             <div className={styles.ContactUsFormContainer}>
                 <p className={styles.FormHeading}>
                     Hello ! Let’s get in touch.

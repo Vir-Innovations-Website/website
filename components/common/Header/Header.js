@@ -14,8 +14,8 @@ const Header = () => {
                         <ul className={styles.HeaderList}>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#">Clientele</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#clientele">Clientele</a></li>
+                            <li><a href="#contact-us">Contact</a></li>
                         </ul>
                     </div>
                 </div>

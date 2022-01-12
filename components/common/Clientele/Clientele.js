@@ -3,7 +3,7 @@ import styles from './Clientele.module.scss'
 
 function Clientele() {
     return (
-        <div className={styles.ClienteleWrapper}>
+        <div id='clientele' className={styles.ClienteleWrapper}>
             <h1 className={styles.ClienteleHeading}>
                 WE ARE CONTENTED TO <span>WORK</span> WITH 
             </h1>
