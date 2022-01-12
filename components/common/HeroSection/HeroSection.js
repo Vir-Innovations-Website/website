@@ -4,7 +4,7 @@ import styles from './HeroSection.module.scss';
 const HeroSection = () =>{
     return(
         <div className={styles.HeroSectionContainer}>
-            <div className="container-fluid">
+            <div className="container">
                 <div className={styles.HeroSectionWrapper} >
                     <div className={styles.HeroSectionHeading}>
                         <strong>INNOVATION</strong>
