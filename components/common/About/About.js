@@ -3,7 +3,9 @@ import styles from './About.module.scss'
 
 const About = () => {
     return (
-        <div id='about' className={styles.AboutWrapper}>
+        <div className={styles.AboutContainer}>
+            <div className="container">
+            <div id='about' className={styles.AboutWrapper}>
             <div className={styles.AboutHeadingWrapper}>
                 <p className={styles.AboutHeading}>TO <span>TRANSFORM</span> HUMANITY;</p>
                 <p className={styles.AboutHeading}>AT HOME & ON BATTLEFRONT</p>
@@ -17,6 +19,8 @@ const About = () => {
 
             </div>
 
+        </div>
+        </div>
         </div>
     )
 }

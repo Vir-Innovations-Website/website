@@ -3,7 +3,9 @@ import styles from './ContactUs.module.scss'
 
 function ContactUs() {
     return (
-        <div id='contact-us' className={styles.ContactUsWrapper}>
+        <div className={styles.ContactUsContainer}>
+            <div className="container">
+            <div id='contact-us' className={styles.ContactUsWrapper}>
             <div className={styles.ContactUsFormContainer}>
                 <p className={styles.FormHeading}>
                     Hello ! Let’s get in touch.
@@ -65,6 +67,8 @@ function ContactUs() {
                     <img src="static/images/copyright icon.png"/>
                     <p>Vir innovations Pvt. Ltd.</p>
                 </div>
+            </div>
+        </div>
             </div>
         </div>
     )

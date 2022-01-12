@@ -3,7 +3,9 @@ import styles from './Clientele.module.scss'
 
 function Clientele() {
     return (
-        <div id='clientele' className={styles.ClienteleWrapper}>
+        <div className={styles.ClienteleContainer}>
+            <div className="container">
+            <div id='clientele' className={styles.ClienteleWrapper}>
             <h1 className={styles.ClienteleHeading}>
                 WE ARE CONTENTED TO <span>WORK</span> WITH 
             </h1>
@@ -30,6 +32,8 @@ function Clientele() {
                 className={styles.Img}/>
             </div>
             <div className={styles.ClienteleClosing}></div>
+        </div>
+            </div>
         </div>
     )
 }
