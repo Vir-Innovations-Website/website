@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Landing.module.css'
+import Image from 'next/image'
+import styles from '../styles/Landing.module.scss'
 import HeroSection from '../components/common/HeroSection/HeroSection'
 import Header from '../components/common/Header/Header.js'
 import About from '../components/common/About/About'
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+<<<<<<< HEAD
         <div >
           <HeroSection/>
           <About/>
@@ -28,6 +30,21 @@ export default function Home() {
           <ContactUs/>
         </div>
       </main>
+=======
+        <div>
+          <Header />
+          <HeroSection />
+          <About />
+          <Services />
+          <Clientele />
+          <ContactUs />
+        </div>
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
+>>>>>>> 259a2330ea17659ae1c7289e21e0efa53c39793a
     </div>
   )
 }
