@@ -13,9 +13,9 @@
 .HeaderWrapper {
   position: fixed;
   z-index: 1;
-  top:0px;
-  right:0;
-  left:0;
+  top: 0px;
+  right: 0;
+  left: 0;
   background-color: #0f0f0f;
   height: 100px;
   @include flex-display;
@@ -49,6 +49,9 @@
           list-style-type: none;
           padding: 16px;
           margin: 0 39px;
+          @media screen and (max-width: 1024px) {
+            margin: 0 16px;
+          }
           a {
             text-decoration: none;
             color: #f1f2f2;
@@ -56,18 +59,18 @@
             text-align: right;
             opacity: 0.8;
 
-            &:hover{
+            &:hover {
               color: #fff;
               opacity: 1;
               padding-bottom: 5px;
               border-bottom: 2px solid #fff;
             }
 
-            &:active{
+            &:active {
               opacity: 1;
               color: #fff;
               padding-bottom: 5px;
-              border-bottom: 2px solid #E2593B;
+              border-bottom: 2px solid #e2593b;
             }
           }
         }
@@ -76,8 +79,8 @@
   }
 }
 
-@media(max-width: 1080px){
-  .HeaderList{
+@media (max-width: 1080px) {
+  .HeaderList {
     display: none;
   }
 }

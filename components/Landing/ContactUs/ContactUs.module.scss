@@ -1,0 +1,138 @@
+@mixin form {
+  p {
+    font-size: 18px;
+    line-height: 35px;
+    opacity: 0.6;
+    color: #f1f2f2;
+  }
+  input {
+    margin: -40px 0 0 0;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+    opacity: 0.3;
+    background-color: inherit;
+    border: 0px;
+    padding: 17.5px 0;
+    max-width: 505px;
+    width: 100%;
+
+    &:hover {
+      border: 0px;
+    }
+
+    &:focus {
+      outline: 0px;
+    }
+  }
+
+  div {
+    max-width: 505px;
+    height: 0px;
+    opacity: 0.6;
+    background-color: #f1f2f2;
+    border: 1px solid #f1f2f2;
+  }
+}
+
+.ContactUsContainer {
+  background-color: #0f0f0f;
+  .ContactUsWrapper {
+    display: flex;
+    @media screen and(max-width:768px) {
+      flex-direction: column;
+    }
+
+    .ContactUsFormContainer {
+      margin-top: 200px;
+      .FormHeading {
+        font-size: 20px;
+        line-height: 35px;
+        opacity: 0.6;
+        color: #f1f2f2;
+      }
+
+      .ContactUsForm {
+        margin: 74px 0 0 0;
+
+        .FormName {
+          @include form;
+        }
+        .FormEmail {
+          margin: 24.5px 0 0 0;
+          @include form;
+        }
+        .FormContact {
+          margin: 24.5px 0 0 0;
+          @include form;
+        }
+        .FormMessege {
+          margin: 24.5px 0 0 0;
+          @include form;
+        }
+        .FormButton {
+          margin: 92.5px 0 0 0;
+          .button {
+            width: 264px;
+            height: 60px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #f1f2f2;
+            border: 3px solid #f1f2f2;
+            box-sizing: border-box;
+            background-color: transparent;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+
+    .InformationContainer {
+      max-width: 500px;
+
+      h5 {
+        margin: 35px 0 0 0;
+        font-size: 20px;
+        line-height: 35px;
+        color: #f1f2f2;
+        opacity: 0.6;
+      }
+
+      p {
+        font-size: 22px;
+        line-height: 35px;
+        color: #f1f2f2;
+      }
+
+      .Pdf {
+        margin: 74px 0 0 0;
+
+        p {
+          font-size: 18px;
+          line-height: 35px;
+          color: #f1f2f2;
+        }
+
+        .terms {
+          margin: -20px 0 0 0;
+        }
+      }
+      .copyright {
+        margin: 37px 0 0 0;
+        display: flex;
+        font-size: 18px;
+        line-height: 35px;
+        color: #f1f2f2;
+        opacity: 0.6;
+
+        img {
+          width: 21px;
+          height: 21px;
+          margin: 8px 4px 0 0;
+        }
+      }
+    }
+  }
+}

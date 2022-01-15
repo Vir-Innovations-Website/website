@@ -1,0 +1,45 @@
+.ServiceItem {
+  .ItemWrapper {
+    display: flex;
+    align-items: center;
+    &.Reverse {
+      flex-direction: row-reverse;
+      @media screen and(max-width:768px) {
+        flex-direction: column-reverse;
+      }
+    }
+    @media screen and(max-width:768px) {
+      flex-direction: column-reverse;
+    }
+    .Image {
+      flex-basis: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 400px;
+        width: 100%;
+        @media screen and(max-width:768px) {
+          margin-bottom: 78px;
+        }
+      }
+    }
+    .Content {
+      flex-basis: 50%;
+      .Title {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 41px;
+        color: #0f0f0f;
+        margin-bottom: 20px;
+      }
+      .Description {
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 35px;
+        color: #0f0f0f;
+        opacity: 0.6;
+      }
+    }
+  }
+}
