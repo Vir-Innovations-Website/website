@@ -126,7 +126,7 @@ function ContactUs() {
                                 <li>Privacy Policy</li>
                             </Link></li>
                             <li><Link href={'/terms-of-service'}>
-                                <li>Privacy Policy</li>
+                                <li>Terms Of Service</li>
                             </Link></li>
                         </ul>
 
