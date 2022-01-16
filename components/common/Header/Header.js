@@ -18,6 +18,9 @@ const Header = () => {
                             <li><a href="#contact-us">Contact</a></li>
                         </ul>
                     </div>
+                    <div className={styles.HeaderMenuButton}>
+                        <img src="static/icons/menu.svg" />
+                    </div>
                 </div>
             </div>
         </div>

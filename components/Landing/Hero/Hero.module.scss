@@ -1,15 +1,5 @@
-@mixin structure($width, $height) {
-  width: $width;
-  height: $height;
-}
-
-@mixin text($size, $height, $weight) {
-  font-size: $size;
-  font-height: $height;
-  font-weight: $weight;
-}
-
 .HeroSectionContainer {
+  margin-top: 100px;
   height: 924px;
   display: flex;
   align-items: center;
@@ -24,6 +14,8 @@
   background-size: cover;
 
   .HeroSectionWrapper {
+    max-width: 730px;
+    padding-top: 375px;
     .HeroSectionHeading {
       font-family: Roboto;
       font-style: normal;
@@ -34,18 +26,29 @@
     }
 
     .HeroSectionText {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 35px;
       color: #f1f2f2;
       opacity: 0.6;
+      margin-top: 30px;
     }
 
-    .HeroSectionButtonWrapper {
-      .HeroSectionButton {
-        background-color: #e2593b;
-        color: #f1f2f2;
-        @include structure(264px, 60px);
-        border-radius: 38px;
-        margin-bottom: 194px;
-      }
+    .HeroSectionButton {
+      margin-top: 70px;
+      text-decoration: none;
+      background-color: #e2593b;
+      color: #f1f2f2;
+      border-radius: 38px;
+      margin-bottom: 194px;
+      width: 264px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
     }
   }
 }

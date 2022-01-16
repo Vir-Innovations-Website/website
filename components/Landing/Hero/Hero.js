@@ -7,16 +7,14 @@ const Hero = () => {
             <div className="container">
                 <div className={styles.HeroSectionWrapper} >
                     <div className={styles.HeroSectionHeading}>
-                        INNOVATION STARTS WITH US
+                        INNOVATION <br />STARTS WITH US
                     </div>
                     <div className={styles.HeroSectionText}>
-                        <p>
-                            A performance driven team of young pioneer working to solve problems in Manufacturing, Defence and Consumer Electronics.
-                        </p>
+                        A performance driven team of young pioneer working to solve problems in Manufacturing, Defence and Consumer Electronics.
                     </div>
-                    <div className={styles.HeroSectionButtonWrapper}>
-                        <button className={styles.HeroSectionButton}>KNOW MORE</button>
-                    </div>
+
+                    <a href='#about' className={styles.HeroSectionButton}>KNOW MORE</a>
+
                 </div>
             </div>
         </div>
