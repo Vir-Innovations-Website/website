@@ -142,6 +142,10 @@
 
       img {
         margin: 4px 0 0 0px;
+
+        @media screen and (max-width: 768px){
+          margin: 4px 0 0 24px;
+        }
       }
 
       p {
@@ -156,6 +160,10 @@
       ul.OtherLinks {
         padding: 0;
         margin: 100px 0 0 0;
+        @media screen and (max-width: 768px){
+          margin: 100px 0 0 24px;
+          
+        }
         li {
           margin: 5px 100px 0 0;
           cursor: pointer;
@@ -163,6 +171,7 @@
           color: #f1f2f2;
           font-size: 18px;
           line-height: 35px;
+          width: 200px;
         }
       }
 
