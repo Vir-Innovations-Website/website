@@ -29,7 +29,7 @@ const index = () => {
                     </h1>
 
                     {
-                        data.map((item, index) => {
+                        data.map((item) => {
                             return (
                                 <div className={styles.PrivacyPolicyContent}>
                                     <h3>{item.heading}</h3>

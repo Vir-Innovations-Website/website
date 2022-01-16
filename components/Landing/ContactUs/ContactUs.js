@@ -122,10 +122,12 @@ function ContactUs() {
                         <p>info@virinnovations.in</p>
 
                         <ul className={styles.OtherLinks}>
-                            <Link href={'/privacy-policy'}>
+                            <li><Link href={'/privacy-policy'}>
                                 <li>Privacy Policy</li>
-                            </Link>
-                            <li>Terms of Service</li>
+                            </Link></li>
+                            <li><Link href={'/terms-of-service'}>
+                                <li>Privacy Policy</li>
+                            </Link></li>
                         </ul>
 
                         <div className={styles.copyright}>
