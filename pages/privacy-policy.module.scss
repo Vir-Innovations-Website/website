@@ -1,0 +1,31 @@
+.PrivacyPolicyContainer{
+    background-color:#0f0f0f;
+    padding: 60px 0 0 0;
+    .PrivacyPolicyWrapper{
+        background-color:#F8F8F8;
+        margin: 100px 310px 0 310px;
+        
+        .PrivacyPolicyHeading{
+            padding: 54px 0 0 105px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 37px;
+        }
+
+        .PrivacyPolicyContent{
+            h3{
+                margin: 39px 0 0 105px;
+                font-weight: normal;
+                font-size: 21px;
+                line-height: 25px;
+            }
+
+            p{
+                margin: 17px 105px 0 105px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+    }
+}
