@@ -1,0 +1,34 @@
+.ClienteleContainer {
+  background-color: #0f0f0f;
+  .ClienteleWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .ClienteleHeading {
+      color: #f1f2f2;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 59px;
+
+      span {
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+
+    .ClienteleImagesContainer {
+      .Img {
+        margin: 81px 60px 0 50px;
+      }
+    }
+
+    .ClienteleClosing {
+      width: 100%;
+      height: 0;
+      border: 1px solid #e2593b;
+      margin: 200px 290px 0 290px;
+    }
+  }
+}

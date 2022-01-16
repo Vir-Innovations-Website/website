@@ -1,0 +1,41 @@
+.ServicesContainer {
+  @mixin structure($width, $height) {
+    width: $width;
+    height: $height;
+  }
+
+  @mixin text($size, $height, $weight) {
+    font-size: $size;
+    font-height: $height;
+    font-weight: $weight;
+  }
+
+  background-color: #f8f8f8;
+
+  .ServicesWrapper {
+    .ServicesHeadingWrapper {
+      @include text(63px, 74px, 300);
+      margin: 180px 0 0 50px;
+
+      .HeadingPart {
+        margin: -40px 0 0 0;
+      }
+      span {
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+
+    .ServicesMainText {
+      p {
+        color: #0f0f0f;
+        margin: 72px 0 0 50px;
+        @include text(20px, 35px, normal);
+        margin-bottom: 101px;
+        @media screen and(max-width:768px) {
+          margin-bottom: 101px;
+        }
+      }
+    }
+  }
+}

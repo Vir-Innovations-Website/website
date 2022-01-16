@@ -1,9 +1,9 @@
 import '../styles/globals.css'
 import "bootstrap/dist/css/bootstrap.min.css"
-import Layout from './../components/common/Layout'
+import Layout from './../Layouts/Layout'
 
 function MyApp({ Component, pageProps }) {
-  return(
+  return (
     <Layout>
       <Component {...pageProps} />
     </Layout>

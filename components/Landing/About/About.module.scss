@@ -1,0 +1,35 @@
+@mixin text($size, $height, $weight) {
+  font-size: $size;
+  font-height: $height;
+  font-weight: $weight;
+}
+
+.AboutContainer {
+  background-color: #0f0f0f;
+
+  .AboutWrapper {
+    color: #f1f2f2;
+    padding: 140px 0 0 30px;
+
+    .AboutHeadingWrapper {
+      @include text(50px, 59px, 300);
+
+      span {
+        font-weight: 700;
+        font-style: italic;
+      }
+      .AboutHeading {
+        margin: -15px 0 0 0;
+      }
+    }
+
+    .AboutText {
+      margin: 49px 0 0 0;
+      p {
+        @include text(22px, 28px, 300);
+        opacity: 0.8;
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+}
