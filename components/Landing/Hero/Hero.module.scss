@@ -1,6 +1,6 @@
 .HeroSectionContainer {
   margin-top: 100px;
-  height: 924px;
+  height: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +22,7 @@
   .HeroSectionWrapper {
     max-width: 730px;
     padding-top: 375px;
+    margin: 100px 0 0 0;
     .HeroSectionHeading {
       font-family: Roboto;
       font-style: normal;
@@ -29,7 +30,9 @@
       font-size: 65px;
       line-height: 76px;
       color: #f1f2f2;
+
       @media screen and (max-width: 768px) {
+        padding: 341px 0 0 24px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -48,6 +51,10 @@
       color: #f1f2f2;
       opacity: 0.6;
       margin-top: 30px;
+
+      @media screen and (max-width: 768px) {
+        mardin: 34px 24px 0 24px;
+      }
     }
 
     .HeroSectionButton {

@@ -56,6 +56,10 @@
 
 .ContactUsContainer {
   background-color: #0f0f0f;
+  padding: 0 0 0 200px;
+  @media screen and (max-width:768px){
+    padding:0 0 0 0;
+  }
   .ContactUsWrapper {
     display: flex;
     @media screen and(max-width:768px) {
@@ -120,7 +124,10 @@
 
     .InformationContainer {
       max-width: 500px;
-
+      margin: 200px 0 0 400px;
+      @media screen and (max-width:768px){
+        margin:0;
+      }
       h5 {
         margin: 35px 0 0 0;
         font-size: 20px;
