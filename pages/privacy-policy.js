@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles/privacy-policy.module.scss'
+import styles from '../styles/privacy-policy.module.scss'
 
 const index = () => {
 
