@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import styles from './ContactUs.module.scss'
 import axios from 'axios'
+import Link from 'next/link'
 
 function ContactUs() {
 
@@ -120,10 +121,12 @@ function ContactUs() {
                         <h5>Support</h5>
                         <p>info@virinnovations.in</p>
 
-                        <div className={styles.Pdf}>
-                            <p>Privacy Policy</p>
-                            <p className={styles.terms}>Terms of Service</p>
-                        </div>
+                        <ul className={styles.OtherLinks}>
+                            <Link href={'/privacy-policy'}>
+                                <li>Privacy Policy</li>
+                            </Link>
+                            <li>Terms of Service</li>
+                        </ul>
 
                         <div className={styles.copyright}>
                             <img src="static/images/copyright icon.png" />
