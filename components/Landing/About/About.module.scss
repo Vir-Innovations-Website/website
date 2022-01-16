@@ -32,11 +32,11 @@
     }
 
     .AboutText {
-      margin: 49px 0 0 0;
+      padding: 49px 0 186px 0;
 
       @media screen and (max-width:768px)
       {
-        margin: 34px 24px 0 8px;
+        padding: 34px 24px 70px 8px;
       }
       p {
         @include text(22px, 28px, 300);

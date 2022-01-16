@@ -141,7 +141,7 @@
       }
 
       img {
-        margin: 4px 0 0 24px;
+        margin: 4px 0 0 0px;
       }
 
       p {
@@ -155,10 +155,14 @@
 
       ul.OtherLinks {
         padding: 0;
+        margin: 100px 0 0 0;
         li {
+          margin: 5px 100px 0 0;
           cursor: pointer;
           list-style: none;
           color: #f1f2f2;
+          font-size: 18px;
+          line-height: 35px;
         }
       }
 
