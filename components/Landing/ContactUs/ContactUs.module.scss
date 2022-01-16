@@ -4,6 +4,11 @@
     line-height: 35px;
     opacity: 0.6;
     color: #f1f2f2;
+
+    @media screen and (max-width:768px) {
+      font-size: 12px;
+      margin: 8px 200px 6px 24px;
+    }
   }
   input {
     margin: -40px 0 0 0;
@@ -17,6 +22,14 @@
     padding: 17.5px 0;
     max-width: 505px;
     width: 100%;
+
+    @media screen and (max-width:768px){
+      width: 190px;
+      font-weight: 300;
+      font-size: 18px;
+      padding:0;
+      margin: 0 0px 5px 24px;
+    }
 
     &:hover {
       border: 0px;
@@ -33,6 +46,11 @@
     opacity: 0.6;
     background-color: #f1f2f2;
     border: 1px solid #f1f2f2;
+
+    @media screen and (max-width:768px){
+      width: 312px;
+      margin: 0 24px 0 24px;
+    }
   }
 }
 
@@ -51,6 +69,11 @@
         line-height: 35px;
         opacity: 0.6;
         color: #f1f2f2;
+
+        @media screen and (max-width:768px){
+          font-size: 14px;
+          margin: 50px 100px 0 23px;
+        }
       }
 
       .ContactUsForm {
@@ -84,6 +107,12 @@
             box-sizing: border-box;
             background-color: transparent;
             border-radius: 30px;
+
+            @media screen and (max-width:768px){
+              background-color: #E2593B;
+              border:0px;
+              margin: 46px 0 0 41px;
+            }
           }
         }
       }
@@ -98,12 +127,23 @@
         line-height: 35px;
         color: #f1f2f2;
         opacity: 0.6;
+
+        @media screen and (max-width:768px){
+          margin: 84px 0 0 24px;
+        }
+      }
+
+      img{
+        margin : 4px 0 0 24px;
       }
 
       p {
         font-size: 22px;
         line-height: 35px;
         color: #f1f2f2;
+        @media screen and (max-width:768px){
+          margin: 0 0 0 24px;
+        }
       }
 
       .Pdf {
@@ -113,10 +153,18 @@
           font-size: 18px;
           line-height: 35px;
           color: #f1f2f2;
+
+          @media screen and (max-width:768px){
+            margin: 0 0 0 24px;
+          }
         }
 
         .terms {
           margin: -20px 0 0 0;
+
+          @media screen and (max-width:768px){
+            margin: 0 0 0 24px;
+          }
         }
       }
       .copyright {
@@ -127,10 +175,20 @@
         color: #f1f2f2;
         opacity: 0.6;
 
+        p{
+          @media screen and (max-width:768px) {
+            margin : 18px 0 0 9px;
+          }
+        }
+
         img {
           width: 21px;
           height: 21px;
           margin: 8px 4px 0 0;
+
+          @media screen and (max-width:768px) {
+            margin : 25px 0 20px 26px;
+          }
         }
       }
     }

@@ -1,6 +1,5 @@
 import { React, useState } from 'react'
 import styles from './ContactUs.module.scss'
-import base from './../../../pages/api/UserData'
 import axios from 'axios'
 
 function ContactUs() {

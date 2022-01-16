@@ -13,7 +13,11 @@
 
     .AboutHeadingWrapper {
       @include text(50px, 59px, 300);
-
+      @media screen and (max-width: 768px){
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 40px;
+      }
       span {
         font-weight: 700;
         font-style: italic;
@@ -29,7 +33,16 @@
         @include text(22px, 28px, 300);
         opacity: 0.8;
         padding: 0 0 20px 0;
+
+        @media screen and (max-width: 768px){
+          margin: 38px 16px 0 16px;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 26px;
+        }
       }
+
+      
     }
   }
 }

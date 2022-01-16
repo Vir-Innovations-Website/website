@@ -13,6 +13,12 @@
     url('/static/images/about-img.png');
   background-size: cover;
 
+  @media screen and (max-width:768px){
+    background-image: linear-gradient(180deg, #0F0F0F 0%, rgba(15, 15, 15, 0) 100%),
+    url('/static/images/mobile-img.png');
+  background-size: cover;
+  }
+
   .HeroSectionWrapper {
     max-width: 730px;
     padding-top: 375px;
