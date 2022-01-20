@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from './../components/common/Footer/Footer'
 import styles from '../styles/Landing.module.scss'
 import Hero from '../components/Landing/Hero/Hero'
 import About from '../components/Landing/About/About'
@@ -24,6 +25,7 @@ export default function Home() {
           <Services />
           <Clientele />
           <ContactUs />
+          <Footer />
         </div>
       </main>
     </div>
