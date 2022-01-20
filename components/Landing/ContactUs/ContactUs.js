@@ -121,14 +121,11 @@ function ContactUs() {
                         <h5>Support</h5>
                         <p>info@virinnovations.in</p>
 
-                        <ul className={styles.OtherLinks}>
-                            <li><Link href={'/privacy-policy'}>
-                                <li>Privacy Policy</li>
-                            </Link></li>
-                            <li><Link href={'/terms-of-service'}>
-                                <li>Terms Of Service</li>
-                            </Link></li>
-                        </ul>
+                        <p className={styles.privacyPolicy}>
+                        <Link href={'/privacy-policy'} className="link">
+                            <p>Privacy Policy</p>
+                        </Link>
+                        </p>
 
                         <div className={styles.copyright}>
                             <img src="static/images/copyright icon.png" />
