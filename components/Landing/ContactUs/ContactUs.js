@@ -18,6 +18,7 @@ function ContactUs() {
     const validateForm =(values) =>{
         const errors = {};
         const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const regexNum = /^(\+\d{1,3}[- ]?)?\d{10}$/;
 
         if(!values.name){
             errors.name = "*Name is required!"
@@ -29,6 +30,8 @@ function ContactUs() {
         }
         if(!values.contact){
             errors.contact = "*Contact number is required!"
+        }else if(!regexNum.test(values.contact)){
+            errors.contact = "*Contact number is not valid!"
         }
         if(!values.messege){
             errors.messege = "*Message is required!"
