@@ -1,12 +1,15 @@
 import '../styles/globals.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from './../Layouts/Layout'
+import { AnimateSharedLayout } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <AnimateSharedLayout>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AnimateSharedLayout>
   );
 }
 

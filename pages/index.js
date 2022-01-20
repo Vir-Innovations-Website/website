@@ -7,6 +7,7 @@ import About from '../components/Landing/About/About'
 import Services from '../components/Landing/Services/Services'
 import Clientele from '../components/Landing/Clientele/Clientele'
 import ContactUs from '../components/Landing/ContactUs/ContactUs'
+import { motion } from "framer-motion";
 
 
 export default function Home() {

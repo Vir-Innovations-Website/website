@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import styles from '../styles/privacy-policy.module.scss'
+import { motion } from "framer-motion";
 
 const index = () => {
 
@@ -29,8 +30,12 @@ const index = () => {
                 <title>Vir Innovations - Privacy Policy</title>
             </Head>
             <div className={styles.PrivacyPolicyContainer}>
+            
                 <div className="container">
-                    <div className={styles.PrivacyPolicyWrapper}>
+                    <motion.div className={styles.PrivacyPolicyWrapper}
+                    initial={{ scale: 1, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ delay: 0.7 }}>
                         <h1 className={styles.PrivacyPolicyHeading}>
                             Privacy Policy
                         </h1>
@@ -46,7 +51,7 @@ const index = () => {
                                 )
                             })
                         }
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </>

@@ -37,6 +37,10 @@
       }
       @include flex-display;
       .HeaderTitle {
+        a{
+          text-decoration: none;
+          color: #fff;
+        }
         @include flex-display;
         @include text(36px, 42px, bold);
         color: #f1f2f2;

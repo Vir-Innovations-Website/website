@@ -5,10 +5,16 @@ const Header = () => {
     return (
         <div className={styles.HeaderWrapper}>
             <div className="container">
-                <div className={`${styles.Header}`}>
+                <div className={`${styles.Header}`} id="header">
                     <div className={styles.Logo}>
-                        <img src="static/images/logo.png" alt="Logo" className={styles.HeaderImg} />
-                        <div className={styles.HeaderTitle}>Vir <span>Innovations</span></div>
+                        <a href="#hero">
+                            <img src="static/images/logo.png" alt="Logo" className={styles.HeaderImg} />
+                        </a>
+                        <div className={styles.HeaderTitle}>
+                            <a href="#hero">
+                            Vir <span>Innovations</span>
+                            </a>
+                        </div>
                     </div>
                     <div className={styles.HeaderMenu}>
                         <ul className={styles.HeaderList}>
