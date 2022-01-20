@@ -60,11 +60,19 @@
   @media screen and (max-width: 768px) {
     padding: 0 0 0 0;
   }
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
   .ContactUsWrapper {
     display: flex;
     @media screen and(max-width:768px) {
       flex-direction: column;
     }
+
+    
 
     .ContactUsFormContainer {
       margin-top: 200px;
@@ -198,6 +206,11 @@
             margin: 25px 0 20px 26px;
           }
         }
+      }
+
+      @media screen and (max-width:1200px){
+        max-width: 600px;
+        margin: auto;
       }
     }
   }
