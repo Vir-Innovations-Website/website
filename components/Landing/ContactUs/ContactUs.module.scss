@@ -1,13 +1,23 @@
 @mixin form {
-  p {
-    font-size: 18px;
-    line-height: 35px;
-    opacity: 0.6;
-    color: #f1f2f2;
-
-    @media screen and (max-width: 768px) {
-      font-size: 12px;
-      margin: 8px 200px 6px 24px;
+  div {
+    display:flex;
+    justify-content: start;
+    
+    span{
+      display: block;
+      color: red;
+      margin: 5px 0 0 10px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 35px;
+      opacity: 0.6;
+      color: #f1f2f2;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        margin: 8px 200px 6px 24px;
+      }
     }
   }
   input {
@@ -40,7 +50,7 @@
     }
   }
 
-  div {
+  .border{
     max-width: 505px;
     height: 0px;
     opacity: 0.6;
