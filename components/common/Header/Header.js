@@ -18,9 +18,9 @@ const Header = () => {
             <div className="container">
                 <div className={`${styles.Header}`} id="header">
                     <div className={styles.Logo}>
-                        <a href="/#hero">
+                        <Link href="/#hero">
                             <img src="static/images/logo.png" alt="Logo" className={styles.HeaderImg} />
-                        </a>
+                        </Link>
                         <div className={styles.HeaderTitle}>
                             <Link href="/#hero">
                                 Vir <span>Innovations</span>
