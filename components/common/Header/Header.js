@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import a from 'next/link';
 import React, { useState } from 'react'
 import styles from './Header.module.scss'
 
@@ -18,19 +18,19 @@ const Header = () => {
             <div className="container">
                 <div className={`${styles.Header}`} id="header">
                     <div className={styles.Logo}>
-                        <Link href="/#hero">
+                        <a href="/#hero">
                             <img src="static/images/logo.png" alt="Logo" className={styles.HeaderImg} />
-                        </Link>
+                        </a>
                         <div className={styles.HeaderTitle}>
-                            <Link href="/#hero">
+                            <a href="/#hero">
                                 Vir <span>Innovations</span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className={styles.HeaderMenu}>
                         <ul className={styles.HeaderList}>
                             {menu.map((menu, menuIndex) => (
-                                <li key={menuIndex}><Link href={`/#${menu.name.toLowerCase()}`}>{menu.name}</Link></li>
+                                <li key={menuIndex}><a href={`/#${menu.name.toLowerCase()}`}>{menu.name}</a></li>
                             ))}
 
                         </ul>
@@ -41,7 +41,7 @@ const Header = () => {
                 </div>
                 {isMenuOpened && <div className={styles.MobileMenu} onClick={() => setMenuOpen(!isMenuOpened)}>
                     {menu.map((menu, menuIndex1) => (
-                        <Link key={menuIndex1} className={styles.MobileMenuItem} href={`/#${menu.name.toLowerCase()}`}>{menu.name}</Link>
+                        <a key={menuIndex1} className={styles.MobileMenuItem} href={`/#${menu.name.toLowerCase()}`}>{menu.name}</a>
                     ))}
                 </div>}
             </div>
