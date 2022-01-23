@@ -1,17 +1,13 @@
-.FooterWrapper{
-    background-color: #0f0f0f;
+.FooterWrapper {
+  background-color: #0f0f0f;
 
-    .footer{
-        font-size: 10px;
-        line-height: 35px;
-        text-align: right;
-        margin: 0 122px 0 0;
-        color: #F1F2F2;
-        opacity: 0.6;
-
-
-        @media screen and (max-width:768px){
-            margin: 0px 24px 2px 0; 
-        }
-    }
+  .footer {
+    font-size: 10px;
+    line-height: 35px;
+    margin: 0 122px 0 0;
+    color: #f1f2f2;
+    opacity: 0.6;
+    text-align: center;
+    width: 100%;
+  }
 }

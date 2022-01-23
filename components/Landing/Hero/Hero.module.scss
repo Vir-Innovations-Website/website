@@ -1,42 +1,48 @@
 .HeroSectionContainer {
   margin-top: 100px;
-  height: 1000px;
+  height: 639px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(
-      to right,
-      rgb(15, 15, 15),
-      rgba(15, 15, 15, 0.8),
-      rgba(15, 15, 15, 0)
+      89.97deg,
+      #000000 0.02%,
+      rgba(15, 15, 15, 0.8) 55.32%,
+      rgba(15, 15, 15, 0) 99.97%
     ),
-    url('/static/images/about-img.png');
+    url('/static/images/landing/hero/hero_bg.png');
   background-size: cover;
+  background-repeat: no-repeat;
 
-  @media screen and (max-width:768px){
-    background-image: linear-gradient(180deg, #0F0F0F 0%, rgba(15, 15, 15, 0) 100%),
-    url('/static/images/mobile-img.png');
-  background-size: cover;
+  @media screen and (max-width: 768px) {
+    margin-top: 56px;
+    background-image: linear-gradient(
+        180deg,
+        #0f0f0f 0%,
+        rgba(15, 15, 15, 0) 400%
+      ),
+      url('/static/images/landing/hero/hero_bg_mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .HeroSectionWrapper {
     max-width: 730px;
-    padding-top: 375px;
-    margin: 100px 0 0 0;
     .HeroSectionHeading {
       font-family: Roboto;
       font-style: normal;
-      font-weight: bold;
+      font-weight: 300;
       font-size: 65px;
       line-height: 76px;
       color: #f1f2f2;
 
+      span {
+        font-style: italic;
+        font-weight: 900;
+      }
+
       @media screen and (max-width: 768px) {
-        padding: 341px 0 0 24px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 28px;
+        font-size: 24px;
         line-height: 33px;
         color: #f1f2f2;
       }
@@ -45,7 +51,7 @@
     .HeroSectionText {
       font-family: Roboto;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 22px;
       line-height: 35px;
       color: #f1f2f2;
@@ -53,7 +59,10 @@
       margin-top: 30px;
 
       @media screen and (max-width: 768px) {
-        mardin: 34px 24px 0 24px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 10px;
       }
     }
 
@@ -63,13 +72,21 @@
       background-color: #e2593b;
       color: #f1f2f2;
       border-radius: 38px;
-      margin-bottom: 194px;
       width: 264px;
       height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 30px;
+        width: 160px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 80px;
+      }
     }
   }
 }

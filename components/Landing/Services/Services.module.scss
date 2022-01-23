@@ -13,13 +13,14 @@
   background-color: #f8f8f8;
 
   .ServicesWrapper {
+    padding: 200px 0 200px 0;
+    @media screen and (max-width: 768px) {
+      padding: 70px 0 70px 0;
+    }
     .ServicesHeadingWrapper {
       @include text(63px, 74px, 300);
-      padding: 180px  0 0 0;
-      margin: 0px 0 0 50px;
 
-      @media screen and (max-width: 768px){
-        padding: 70px 0 0 0;
+      @media screen and (max-width: 768px) {
         margin: 0px 24px 0 24px;
         font-weight: 300;
         font-size: 21px;
@@ -36,13 +37,20 @@
     }
 
     .ServicesMainText {
+      // margin-top: 40px;
       p {
         color: #0f0f0f;
-        margin: 72px 0 0 50px;
-        @include text(20px, 35px, normal);
-        margin-bottom: 101px;
+        opacity: 0.6;
+        @include text(16px, 30px, normal);
+        span {
+          font-style: italic;
+          font-weight: 500;
+          line-height: 28px;
+          opacity: 1;
+          color: #000;
+        }
         @media screen and(max-width:768px) {
-          margin:23px 24px 0px 24px;
+          margin: 23px 24px 0px 24px;
           font-weight: 300;
           font-size: 14px;
           line-height: 26px;

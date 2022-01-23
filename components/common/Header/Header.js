@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Header.module.scss'
 
 const Header = () => {
+
+    const menu = [
+        { name: 'About' },
+        { name: 'Services' },
+        { name: 'Clientele' },
+        { name: 'Contact' },
+    ]
+
+
+    const [isMenuOpened, setMenuOpen] = useState(false);
     return (
         <div className={styles.HeaderWrapper}>
             <div className="container">
@@ -12,22 +22,27 @@ const Header = () => {
                         </a>
                         <div className={styles.HeaderTitle}>
                             <a href="#hero">
-                            Vir <span>Innovations</span>
+                                Vir <span>Innovations</span>
                             </a>
                         </div>
                     </div>
                     <div className={styles.HeaderMenu}>
                         <ul className={styles.HeaderList}>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#clientele">Clientele</a></li>
-                            <li><a href="#contact-us">Contact</a></li>
+                            {menu.map((menu, menuIndex) => (
+                                <li key={menuIndex}><a href={`#${menu.name.toLowerCase()}`}>{menu.name}</a></li>
+                            ))}
+
                         </ul>
                     </div>
-                    <div className={styles.HeaderMenuButton}>
+                    <div className={styles.HeaderMenuButton} onClick={() => setMenuOpen(!isMenuOpened)}>
                         <img src="static/icons/menu.svg" />
                     </div>
                 </div>
+                {isMenuOpened && <div className={styles.MobileMenu} onClick={() => setMenuOpen(!isMenuOpened)}>
+                    {menu.map((menu, menuIndex1) => (
+                        <a key={menuIndex1} className={styles.MobileMenuItem} href={`#${menu.name.toLowerCase()}`}>{menu.name}</a>
+                    ))}
+                </div>}
             </div>
         </div>
 

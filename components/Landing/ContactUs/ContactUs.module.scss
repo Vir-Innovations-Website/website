@@ -16,7 +16,8 @@
 
       @media screen and (max-width: 768px) {
         font-size: 12px;
-        margin: 8px 200px 6px 24px;
+        line-height: 18px;
+        margin-bottom: 0px;
       }
     }
   }
@@ -26,19 +27,14 @@
     font-size: 30px;
     line-height: 35px;
     color: #fff;
-    opacity: 0.3;
     background-color: inherit;
     border: 0px;
     padding: 17.5px 0;
     max-width: 505px;
     width: 100%;
-
     @media screen and (max-width: 768px) {
-      width: 190px;
-      font-weight: 300;
       font-size: 18px;
-      padding: 0;
-      margin: 0 0px 5px 24px;
+      padding: 8px 0;
     }
 
     &:hover {
@@ -56,49 +52,46 @@
     opacity: 0.6;
     background-color: #f1f2f2;
     border: 1px solid #f1f2f2;
-
-    @media screen and (max-width: 768px) {
-      width: 312px;
-      margin: 0 24px 0 24px;
-    }
   }
 }
 
 .ContactUsContainer {
   background-color: #0f0f0f;
-  padding: 0 0 0 200px;
+  padding-top: 200px;
   @media screen and (max-width: 768px) {
-    padding: 0 0 0 0;
+    padding-top: 80px;
   }
 
+  .FormHeading {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #f1f2f2;
+    opacity: 0.6;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
   @media screen and (max-width: 1200px) {
-    padding-left: 50px;
     max-width: 1200px;
     margin: auto;
   }
   .ContactUsWrapper {
     display: flex;
+    padding-bottom: 80px;
     @media screen and(max-width:768px) {
       flex-direction: column;
     }
 
     .ContactUsFormContainer {
-      margin-top: 200px;
-      .FormHeading {
-        font-size: 20px;
-        line-height: 35px;
-        opacity: 0.6;
-        color: #f1f2f2;
-
-        @media screen and (max-width: 768px) {
-          font-size: 14px;
-          margin: 50px 100px 0 23px;
-        }
+      flex-basis: 50%;
+      padding-right: 40px;
+      @media screen and(max-width:768px) {
+        padding-right: 0px;
       }
-
       .ContactUsForm {
-        margin: 74px 0 0 0;
-
         .FormName {
           @include form;
         }
@@ -115,7 +108,8 @@
           @include form;
         }
         .FormButton {
-          margin: 92.5px 0 0 0;
+          margin: 60px 0 0 0;
+          display: flex;
           .button {
             width: 264px;
             height: 60px;
@@ -123,62 +117,67 @@
             font-size: 18px;
             line-height: 21px;
             color: #f1f2f2;
-            border: 3px solid #f1f2f2;
+            border: 3px solid #e2593b;
             box-sizing: border-box;
             background-color: transparent;
             border-radius: 30px;
-
+            color: #e2593b;
             @media screen and (max-width: 768px) {
-              background-color: #e2593b;
-              border: 0px;
-              margin: 46px 0 0 41px;
+              width: 160px;
+              height: 37px;
+              border: 1px solid #e2593b;
+              font-weight: 300;
+              font-size: 15px;
+              line-height: 18px;
             }
           }
+        }
+        .SendMessage {
+          margin-top: 40px;
+          font-size: 18px;
+          color: #fff;
         }
       }
     }
 
     .InformationContainer {
-      max-width: 500px;
-      margin: 200px 0 0 400px;
+      margin-left: 200px;
+      flex-basis: 50%;
       @media screen and (max-width: 768px) {
         margin: 0;
+        margin-top: 50px;
       }
       h5 {
-        margin: 35px 0 0 0;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 35px;
+        font-weight: 300;
         color: #f1f2f2;
         opacity: 0.6;
-
         @media screen and (max-width: 768px) {
-          margin: 84px 0 0 24px;
+          font-size: 12px;
+          line-height: 22px;
+          margin-bottom: 0px;
         }
       }
 
       img {
-        margin: 4px 0 0 0px;
-
-        @media screen and (max-width: 768px) {
-          margin: 4px 0 0 24px;
-        }
+        margin: 4px 0 20px 0px;
       }
 
       p {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 35px;
         color: #f1f2f2;
         @media screen and (max-width: 768px) {
-          margin: 0 0 0 24px;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 20px;
         }
       }
 
       .privacyPolicy {
         padding: 0;
-        margin: 80px 0 0 0;
-        @media screen and (max-width: 768px) {
-          margin: 100px 0 0 24px;
-        }
+        margin: 40px 0 0 0;
         cursor: pointer;
         .link {
           list-style-type: none;
@@ -187,6 +186,10 @@
         font-size: 18px;
         line-height: 35px;
         width: 200px;
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
 
       .copyright {
@@ -197,26 +200,11 @@
         color: #f1f2f2;
         opacity: 0.6;
 
-        p {
-          @media screen and (max-width: 768px) {
-            margin: 18px 0 0 9px;
-          }
-        }
-
         img {
           width: 21px;
           height: 21px;
           margin: 8px 4px 0 0;
-
-          @media screen and (max-width: 768px) {
-            margin: 25px 0 20px 26px;
-          }
         }
-      }
-
-      @media screen and (max-width: 1200px) {
-        max-width: 600px;
-        margin: auto;
       }
     }
   }
