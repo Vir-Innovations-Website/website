@@ -1,24 +1,55 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import styles from './ContactUs.module.scss'
 import axios from 'axios'
 import Link from 'next/link'
 
 function ContactUs() {
-
-    const [data, setData] = useState(
-        {
-            name: "",
-            contact: "",
-            email: "",
-            messege: "",
-        }
-    )
-
+    const validateData = {
+        name: "",
+        contact: "",
+        email: "",
+        messege: "",
+    };
+    const [data, setData] = useState(validateData);
+    const [Errors, setErrors] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
     const [success, setSuccess] = useState(false)
 
+    const validateForm = (values) => {
+        const errors = {};
+        const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const regexNum = /^(\+\d{1,3}[- ]?)?\d{10}$/;
 
+        if (!values.name) {
+            errors.name = "*Name is required!"
+        }
+        if (!values.email) {
+            errors.email = "*Email is required!"
+        } else if (!regex.test(values.email)) {
+            errors.email = "*Email is not valid!"
+        }
+        if (!values.contact) {
+            errors.contact = "*Contact number is required!"
+        } else if (!regexNum.test(values.contact)) {
+            errors.contact = "*Contact number is not valid!"
+        }
+        if (!values.messege) {
+            errors.messege = "*Message is required!"
+        }
+        return errors;
+    }
+
+    useEffect(() => {
+        if (Object.keys(Errors).length == 0 && isSubmit) {
+            console.log(Errors)
+        }
+    }, [Errors])
     const submitForm = (e) => {
-        e.preventDefault();
+        e.preventDefault()
+        validateForm(data);
+        setErrors(validateForm(data));
+        setIsSubmit(true);
+
 
         let _data = {
             "fields": {
@@ -35,8 +66,12 @@ function ContactUs() {
         }
 
         axios.post(`https://api.airtable.com/v0/appx3UnnbNahdeqgT/contact_form`, _data, { headers }).then((res) => {
-            setSuccess(true);
             console.log(res);
+            setSuccess(true)
+            setData(validateData);
+            setTimeout(() => {
+                setSuccess(false);
+            }, 5000);
         }).catch((err) => {
             console.log(err)
         })
@@ -50,50 +85,62 @@ function ContactUs() {
     return (
         <div className={styles.ContactUsContainer}>
             <div className="container">
+                <p className={styles.FormHeading}>
+                    Hello ! Let’s get in touch.
+                </p>
                 <div id='contact-us' className={styles.ContactUsWrapper}>
                     <div className={styles.ContactUsFormContainer}>
-                        <p className={styles.FormHeading}>
-                            Hello ! Let’s get in touch.
-                        </p>
                         <div className={styles.ContactUsForm}>
-                            <form className={styles.FormName}>
-                                <p>Name</p>
+                            <div className={styles.FormName}>
+                                <div>
+                                    <p>Name</p>
+                                    <span>{Errors.name}</span>
+                                </div>
                                 <input
                                     onChange={(e) => SendData(e)}
                                     id="name"
                                     value={data.name}
                                     type="text"
                                     placeholder="Enter Name" />
-                                <div></div>
-                            </form>
+                                <div className="border"></div>
+                            </div>
                             <div className={styles.FormEmail}>
-                                <p>Email Id</p>
+                                <div>
+                                    <p>Email</p>
+                                    <span>{Errors.email}</span>
+                                </div>
                                 <input
                                     type="text"
                                     onChange={(e) => SendData(e)}
                                     id="email"
                                     value={data.email}
                                     placeholder="Enter email address" />
-                                <div></div>
+                                <div className="border"></div>
                             </div>
                             <div className={styles.FormContact}>
-                                <p>Contact Number</p>
+                                <div>
+                                    <p>Contact number</p>
+                                    <span>{Errors.contact}</span>
+                                </div>
                                 <input type="text"
                                     onChange={(e) => SendData(e)}
                                     id="contact"
                                     value={data.contact}
                                     placeholder="Enter contact number" />
-                                <div></div>
+                                <div className="border"></div>
                             </div>
                             <div className={styles.FormMessege}>
-                                <p>Messege</p>
+                                <div>
+                                    <p>Messege</p>
+                                    <span>{Errors.messege}</span>
+                                </div>
                                 <input
                                     type="text"
                                     onChange={(e) => SendData(e)}
                                     id="messege"
                                     value={data.messege}
                                     placeholder="Enter your messege" />
-                                <div></div>
+                                <div className="border"></div>
                             </div>
                             <div className={styles.FormButton}>
                                 <button
@@ -104,14 +151,16 @@ function ContactUs() {
                                     SEND MESSEGE
                                 </button>
                             </div>
+                            {success && <div className={styles.SendMessage}>Successully sent you message </div>}
 
-                            {success && <div className={styles.SendMesage}> Successully sent you message </div>}
                         </div>
                     </div>
 
                     <div className={styles.InformationContainer}>
                         <h5>Connect with us</h5>
-                        <img src="static/images/Linkdin.png" />
+                        <a href='https://www.linkedin.com/company/virinnovations'>
+                            <img src="static/images/Linkdin.png" />
+                        </a>
                         <h5>Reach us</h5>
                         <p>Vir Innovations,<br></br>
                             Plot No. 8-2-438/7, V V S Crest, <br></br>
@@ -121,16 +170,14 @@ function ContactUs() {
                         <h5>Support</h5>
                         <p>info@virinnovations.in</p>
 
-                        <ul className={styles.OtherLinks}>
-                            <Link href={'/privacy-policy'}>
-                                <li>Privacy Policy</li>
-                            </Link>
-                            <li>Terms of Service</li>
-                        </ul>
+                        <Link href={'/privacy-policy'} className="link">
+                            <p className={styles.privacyPolicy}>
+                                Privacy Policy
+                            </p>
+                        </Link>
 
                         <div className={styles.copyright}>
-                            <img src="static/images/copyright icon.png" />
-                            <p>Vir innovations Pvt. Ltd.</p>
+                            <p>&copy; Vir innovations Pvt. Ltd.</p>
                         </div>
                     </div>
                 </div>

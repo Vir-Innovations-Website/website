@@ -1,4 +1,5 @@
 import React from 'react';
+import { convertToHtml } from '../../../../helpers';
 import styles from './ServiceItem.module.scss';
 
 const ServiceItem = ({ card }) => {
@@ -11,7 +12,7 @@ const ServiceItem = ({ card }) => {
                     </div>
                     <div className={styles.Content}>
                         <div className={styles.Title}>{card.title}</div>
-                        <div className={styles.Description}>{card.description}</div>
+                        <div className={styles.Description} dangerouslySetInnerHTML={convertToHtml(card.description)}></div>
                     </div>
                 </div>
             </div>
