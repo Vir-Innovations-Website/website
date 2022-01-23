@@ -17,11 +17,11 @@ const Header = () => {
             <div className="container">
                 <div className={`${styles.Header}`} id="header">
                     <div className={styles.Logo}>
-                        <a href="#hero">
+                        <a href="/#hero">
                             <img src="static/images/logo.png" alt="Logo" className={styles.HeaderImg} />
                         </a>
                         <div className={styles.HeaderTitle}>
-                            <a href="#hero">
+                            <a href="/#hero">
                                 Vir <span>Innovations</span>
                             </a>
                         </div>
@@ -29,7 +29,7 @@ const Header = () => {
                     <div className={styles.HeaderMenu}>
                         <ul className={styles.HeaderList}>
                             {menu.map((menu, menuIndex) => (
-                                <li key={menuIndex}><a href={`#${menu.name.toLowerCase()}`}>{menu.name}</a></li>
+                                <li key={menuIndex}><a href={`/#${menu.name.toLowerCase()}`}>{menu.name}</a></li>
                             ))}
 
                         </ul>
@@ -40,7 +40,7 @@ const Header = () => {
                 </div>
                 {isMenuOpened && <div className={styles.MobileMenu} onClick={() => setMenuOpen(!isMenuOpened)}>
                     {menu.map((menu, menuIndex1) => (
-                        <a key={menuIndex1} className={styles.MobileMenuItem} href={`#${menu.name.toLowerCase()}`}>{menu.name}</a>
+                        <a key={menuIndex1} className={styles.MobileMenuItem} href={`/#${menu.name.toLowerCase()}`}>{menu.name}</a>
                     ))}
                 </div>}
             </div>
