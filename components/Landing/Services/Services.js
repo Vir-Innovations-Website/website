@@ -12,7 +12,7 @@ const Services = () => {
         reverse: false
     },
     {
-        image: 'static/images/landing/services/mixer.png',
+        // image: 'static/images/landing/services/mixer.png',
         title: 'Consumer Electronics',
         description: '<span>Greatness Never Ends, but evolves.</span><br/> We are building great range of consumer products in the areas of kitchen and lifestyle. Our flagship <span>Nut-milk extractors</span> are one of the kind in the juicers and blenders segment, which can turn nuts into tasty milk.<br/> Making your health safer and kitchen smarter.',
         reverse: true

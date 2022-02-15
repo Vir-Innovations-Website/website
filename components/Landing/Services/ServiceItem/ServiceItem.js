@@ -8,7 +8,7 @@ const ServiceItem = ({ card }) => {
             <div className='container'>
                 <div className={`${styles.ItemWrapper} ${card.reverse && styles.Reverse}`}>
                     <div className={styles.Image}>
-                        <img src={card.image} alt={card.title} />
+                        {card.image ? <img src={card.image} alt={card.title} /> : <div style={{ height: 400, maxWidth: 400 }}></div>}
                     </div>
                     <div className={styles.Content}>
                         <div className={styles.Title}>{card.title}</div>
