@@ -4,11 +4,11 @@
     align-items: center;
     &.Reverse {
       flex-direction: row-reverse;
-      @media screen and(max-width:768px) {
+      @media screen and (max-width:768px) {
         flex-direction: column-reverse;
       }
     }
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       flex-direction: column-reverse;
     }
     .Image {
@@ -20,7 +20,7 @@
       img {
         max-width: 400px;
         width: 100%;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
           // margin: 20px 24px 78px 24px;
           width: 312px;
           height: 312px;

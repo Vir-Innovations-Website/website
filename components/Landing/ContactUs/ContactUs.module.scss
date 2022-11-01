@@ -81,14 +81,14 @@
   .ContactUsWrapper {
     display: flex;
     padding-bottom: 80px;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       flex-direction: column;
     }
 
     .ContactUsFormContainer {
       flex-basis: 50%;
       padding-right: 40px;
-      @media screen and(max-width:768px) {
+      @media screen and (max-width:768px) {
         padding-right: 0px;
       }
       .ContactUsForm {
