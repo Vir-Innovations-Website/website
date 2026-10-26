@@ -5,6 +5,7 @@ import styles from '../styles/Landing.module.scss'
 import Hero from '../components/Landing/Hero/Hero'
 import About from '../components/Landing/About/About'
 import Services from '../components/Landing/Services/Services'
+import Projects from '../components/Landing/Projects/Projects'
 import Clientele from '../components/Landing/Clientele/Clientele'
 import ContactUs from '../components/Landing/ContactUs/ContactUs'
 import { motion } from "framer-motion";
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <meta name="description" content="A performance driven team of young pioneer working to solve problems in Manufacturing, Defence and Consumer Electronics." />
+        <meta name="description" content="A performance driven team of young pioneer working to solve problems in Manufacturing and Consumer Electronics." />
         <link rel="icon" href="/static/images/logo.png" />
         <title>Vir Innovations</title>
       </Head>
@@ -24,6 +25,7 @@ export default function Home() {
           <Hero />
           <About />
           <Services />
+          <Projects />
           <Clientele />
           <ContactUs />
         </div>

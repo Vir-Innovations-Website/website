@@ -10,7 +10,7 @@ const Hero = () => {
                         INNOVATION <br />STARTS WITH <span>US</span>
                     </div>
                     <div className={styles.HeroSectionText}>
-                        A performance driven team of young pioneer working to solve problems in Manufacturing, Defence and Consumer Electronics.
+                        A performance driven team of young pioneer working to solve problems in Manufacturing and Consumer Electronics.
                     </div>
 
                     <a href='#about' className={styles.HeroSectionButton}>KNOW MORE</a>

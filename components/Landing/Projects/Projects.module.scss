@@ -1,0 +1,81 @@
+.ProjectsContainer {
+  background-color: #ffffff;
+
+  .ProjectsWrapper {
+    padding: 150px 0 150px 0;
+    @media screen and (max-width: 768px) {
+      padding: 70px 24px 70px 24px;
+    }
+
+    .ProjectsHeadingWrapper {
+      font-size: 63px;
+      font-weight: 300;
+      @media screen and (max-width: 768px) {
+        font-size: 21px;
+        line-height: 50px;
+      }
+      span {
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+
+    .ProjectsMainText p {
+      max-width: 640px;
+      font-size: 16px;
+      line-height: 30px;
+      color: #0f0f0f;
+      opacity: 0.6;
+      @media screen and (max-width: 768px) {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 26px;
+      }
+    }
+
+    .ProjectsGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 48px;
+      margin-top: 60px;
+      @media screen and (max-width: 576px) {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+      }
+    }
+
+    .ProjectCard {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 70%;
+        border-radius: 20px;
+        margin-bottom: 24px;
+        transition: transform 0.3s ease;
+      }
+      &:hover img {
+        transform: translateY(-6px);
+      }
+      .Title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: #0f0f0f;
+        margin-bottom: 12px;
+        border-left: 4px solid #e2593b;
+        padding-left: 12px;
+      }
+      .Description {
+        font-size: 15px;
+        line-height: 26px;
+        color: #0f0f0f;
+        opacity: 0.6;
+        span {
+          font-style: italic;
+          font-weight: 500;
+          color: #000;
+        }
+      }
+    }
+  }
+}

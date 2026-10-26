@@ -7,6 +7,7 @@ const Header = () => {
     const menu = [
         { name: 'About' },
         { name: 'Services' },
+        { name: 'Projects' },
         { name: 'Clientele' },
         { name: 'Contact' },
     ]

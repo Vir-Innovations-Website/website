@@ -17,11 +17,6 @@ function Clientele() {
                 className={styles.Img}
               />
               <img
-                src="static/images/Indian Army.png"
-                alt="Indian Army"
-                className={styles.Img}
-              />
-              <img
                 src="static/images/TataSteel.png"
                 alt="Tata Steel"
                 className={styles.Img}

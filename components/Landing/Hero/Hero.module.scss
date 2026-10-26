@@ -4,26 +4,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #0f0f0f;
   background-image: linear-gradient(
-      89.97deg,
-      #000000 0.02%,
-      rgba(15, 15, 15, 0.8) 55.32%,
-      rgba(15, 15, 15, 0) 99.97%
+      90deg,
+      #0f0f0f 0%,
+      rgba(15, 15, 15, 0.9) 30%,
+      rgba(15, 15, 15, 0.3) 55%,
+      rgba(15, 15, 15, 0) 70%
     ),
-    url('/static/images/landing/hero/hero_bg.png');
+    url('/static/images/landing/hero/hero_network.svg');
   background-size: cover;
+  background-position: right center;
   background-repeat: no-repeat;
 
   @media screen and (max-width: 768px) {
     margin-top: 56px;
     background-image: linear-gradient(
-        180deg,
+        0deg,
         #0f0f0f 0%,
-        rgba(15, 15, 15, 0) 400%
+        rgba(15, 15, 15, 0.85) 40%,
+        rgba(15, 15, 15, 0) 75%
       ),
-      url('/static/images/landing/hero/hero_bg_mobile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+      url('/static/images/landing/hero/hero_network.svg');
   }
 
   .HeroSectionWrapper {
