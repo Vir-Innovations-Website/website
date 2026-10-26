@@ -37,10 +37,16 @@ const Services = () => {
         reverse: true
     },
     {
+        image: 'static/images/landing/services/defence.svg',
+        title: 'Defence',
+        description: 'We believe a Safe nation is a Progressive Nation. Our innovative, <span>Future Ready Systems</span> are mainly used in reconnaissance, Intelligence, and surveillance applications by the forces to take a step ahead. Our systems are deployed at various Prestigious Defence Organisations and borders to make us safer.',
+        reverse: false
+    },
+    {
         image: 'static/images/landing/services/universities.svg',
         title: 'Universities',
         description: 'We collaborate with universities on research projects, labs and student innovation. From <span>custom lab equipment to IoT and robotics platforms</span>, we help institutions bring hands-on technology into learning and research.<br/> We work alongside faculty and students on funded research, final-year projects and innovation labs, sharing real-world industry experience along the way. <span>Building the engineers and innovators of tomorrow.</span>',
-        reverse: false
+        reverse: true
     }]
 
     return (

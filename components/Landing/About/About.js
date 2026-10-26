@@ -8,7 +8,7 @@ const About = () => {
                 <div id='about' className={styles.AboutWrapper}>
                     <div className={styles.AboutHeadingWrapper}>
                         <p className={styles.AboutHeading}>TO <span>TRANSFORM</span> HUMANITY;</p>
-                        <p className={styles.AboutHeading}>FROM FIELD TO CLASSROOM</p>
+                        <p className={styles.AboutHeading}>FROM LAB TO FIELD</p>
                     </div>
                     <div className={styles.AboutText}>
                         <p>We are a product development company and our objective is to create products that are innovative and can match up in the new era of accelerated technological progress.

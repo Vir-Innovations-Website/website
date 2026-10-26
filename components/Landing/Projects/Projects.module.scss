@@ -47,6 +47,14 @@
     .ProjectCard {
       display: flex;
       flex-direction: column;
+      &:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 24px);
+        justify-self: center;
+        @media screen and (max-width: 576px) {
+          max-width: 100%;
+        }
+      }
       img {
         width: 70%;
         border-radius: 20px;

@@ -23,6 +23,11 @@ const Projects = () => {
         image: 'static/images/landing/projects/pan-tilt.jpg',
         title: 'Pan & Tilt Systems',
         description: 'Motorised pan and tilt units for cameras and sensors, delivering <span>smooth, accurate 360° positioning</span>. Built for surveillance, tracking and imaging applications, with remote control and support for a wide range of payloads.<br/> High-torque motors with precise feedback provide stable, vibration-free movement, while weatherproof enclosures keep them running outdoors in all conditions. Units support preset positions, automated patrol patterns and object tracking, and integrate easily with existing control software through standard protocols. <span>Steady, precise and always on target.</span>'
+    },
+    {
+        image: 'static/images/landing/projects/simulator.jpg',
+        title: 'Simulators',
+        description: 'Realistic simulators that let trainees practise safely before going into the real world. We design and build <span>complete simulator systems</span>, from custom control hardware and cockpits to software and visuals, recreating real equipment and operating conditions with high accuracy.<br/> Our simulators offer configurable training scenarios, performance tracking and instructor controls, helping teams build skills faster while reducing training costs, wear on real equipment and risk. <span>Train smarter, perform better.</span>'
     }]
 
     return (
